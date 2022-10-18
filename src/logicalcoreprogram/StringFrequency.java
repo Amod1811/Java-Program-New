@@ -18,7 +18,7 @@ public class StringFrequency {
 		String name = sc.nextLine();
 		
 		System.out.println("Enter the charater to find the fequency");
-		char input = sc.next().charAt(4);
+		char input = sc.next().charAt(1);
 		StringFrequency demo = new StringFrequency();
 		demo.getFrequency(name, input);
 		

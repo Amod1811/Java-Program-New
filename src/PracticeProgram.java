@@ -1,36 +1,21 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Scanner;
 
 public class PracticeProgram {
-
+	
 	public static void main(String[] args) {
-		String array1[] = { "C",
-			      "C++",
-			      "C#",
-			      "JAVA",
-			      "SQL",
-			      "ORACLE"};
-		String array2[] = { "MySQL",
-			      "SQL",
-			      "Android",
-			      "ORACLE",
-			      "PostgreSQL",
-			      "DB2",
-			      "JAVA"};
-		System.out.println("Array1" + Arrays.toString(array1));
-		System.out.println("Array2" + Arrays.toString(array2));
-		
-		HashSet<String> set = new HashSet<>();
-		
-		for(int i = 0; i < array1.length; i++) {
-			for(int j = 0; j < array2.length; j++) {
-				if(array1[i].equals(array2[j])) {
-					set.add(array1[i]);
-				}
-			}
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter String");
+		String str = Sc.next();
+		StringBuilder sbl = new StringBuilder();
+		StringBuilder sb = sbl.reverse();
+		if(str.equals(sb)) {
+			System.out.println(sbl + "String is palindrome");
+		}else {
+			System.out.println(sbl +"String is Not Palindrome");
 		}
-		System.out.println("Common String is " + set);
 	}
 }
-

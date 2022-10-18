@@ -28,5 +28,4 @@ public class MergeTwoList {
 		System.out.println("merged:" + merge);
 
 	}
-
 }
