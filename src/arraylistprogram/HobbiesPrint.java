@@ -14,8 +14,6 @@ public class HobbiesPrint {
 	list.add("Reading");
 	//System.out.println(list);
 	System.out.println("My hobbies are:" +  list.set(2, "Dancing") + " " + list.set(3, "Reading"));
-	
-	
 	}
 
 }

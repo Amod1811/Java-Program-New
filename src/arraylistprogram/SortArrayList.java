@@ -15,7 +15,7 @@ public class SortArrayList {
 		list1.add(8);
 		System.out.println(list1);
 		Collections.sort(list1);
-
+		
 	}
 
 }

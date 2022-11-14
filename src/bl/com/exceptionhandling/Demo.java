@@ -13,7 +13,7 @@ public class Demo {
 			System.out.println(e);
 		}
 		finally {
-			System.out.println("I in finally Block");
+			System.out.println("I am in finally Block");
 		}
 	}
 

@@ -18,7 +18,8 @@ public void m3()
 {
 System.out.println("m3 –method implementation");
 }
-public class I3 {
+
+public class I1 {
 		
 		public static void main(String[] args)
 		{

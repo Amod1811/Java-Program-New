@@ -18,6 +18,7 @@ public void m3()
 {
 System.out.println("m3 –method implementation");
 }
+}
 public class InterfaceProgram {
 public static void main(String[] args) {
 	Test1 t=new Test1();
@@ -26,4 +27,4 @@ public static void main(String[] args) {
 	t.m3();
 }
 }
-}
+

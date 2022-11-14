@@ -36,8 +36,8 @@ public class ArrayList1 {
 			System.out.println(list1);
 			
 			System.out.println("Arraylist before sorting:" + list1);
-			Collections.sort(list1);
 			
+			Collections.sort(list1);
 			System.out.println("ArrayList After sorting :" + list1);
 			
 			System.out.println("Concatinate the List1 and list2:" + list1 + list2 );

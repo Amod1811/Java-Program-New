@@ -1,21 +1,51 @@
+import java.awt.print.Printable;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.PriorityQueue;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class PracticeProgram {
-	
 	public static void main(String[] args) {
-		Scanner Sc = new Scanner(System.in);
-		System.out.println("Enter String");
-		String str = Sc.next();
-		StringBuilder sbl = new StringBuilder();
-		StringBuilder sb = sbl.reverse();
-		if(str.equals(sb)) {
-			System.out.println(sbl + "String is palindrome");
-		}else {
-			System.out.println(sbl +"String is Not Palindrome");
-		}
+		 ArrayList<String> list=new ArrayList<String>();//Creating arraylist
+	        list.add("Ravi");//Adding object in arraylist
+	        list.add("Vijay");
+	        list.add("Ravi");
+	        list.add("Ajay");
+
+	        System.out.println("Traversing list through List Iterator:");
+	        //Here, element iterates in reverse order
+	        ListIterator<String> list1=list.listIterator(list.size());
+	        while(list1.hasPrevious())
+	        {
+	            String str=list1.previous();
+	            System.out.println(str);
+	        }
+	        System.out.println("Traversing list through for loop:");
+	        for(int i=0;i<list.size();i++)
+	        {
+	            System.out.println(list.get(i));
+	        }
+
+	        System.out.println("Traversing list through forEach() method:");
+	        //The forEach() method is a new feature, introduced in Java 8.
+	        list.forEach(a->{ //Here, we are using lambda expression
+	            System.out.println(a);
+	        });
+
+	        System.out.println("Traversing list through forEachRemaining() method:");
+	        Iterator<String> itr=list.iterator();
+	        itr.forEachRemaining(a-> //Here, we are using lambda expression
+	        {
+	            System.out.println(a);
+	        });
 	}
 }
